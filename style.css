@@ -75,7 +75,7 @@ nav {
   gap: 25px;
   padding: 35px 0;
 }
-/* article */
+/* article 1 */
 
 .mockups {
   width: 100%;
@@ -105,6 +105,39 @@ nav {
   max-width: 450px;
   margin: 0 auto;
 }
+/* .article-two */
+.article-two {
+  background-color: hsl(220, 16%, 96%);
+  text-align: center;
+  margin-top: 50px;
+  padding: 8px 4px;
+}
+.article-two p {
+  max-width: 450px;
+  margin: 15px auto;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  color: hsl(233, 8%, 62%);
+}
+.article-two h2 {
+  font-weight: 400;
+  font-size: 26px;
+  font-size: 30px;
+  margin-top: 60px;
+  padding-top: 8px;
+}
+.article-two h3 {
+  color:  hsl(233, 26%, 24%);
+  font-weight: 350;
+  font-size: 28px;
+  margin-top: 10px;  
+}
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
 /* Larger screens */
 @media screen and (min-width: 1024px) {
   .links {
@@ -138,35 +171,46 @@ nav {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-  }
-  .biggest-heading {
-    text-align: left;
-    
-  }
-  .first-paragraph {
-    text-align: left;
-    
- 
-  }
-  .content {
+}
+.biggest-heading {
+    text-align: left;    
+}
+.first-paragraph {
+    text-align: left; 
+}
+.content {
     text-align: left;
     display: flex;
     flex-direction: column;
     justify-content: center;
     max-width: 600px;
-    width: 45%;
-    
-  }
+    width: 45%; 
+}
   .content-request, .content p {
     margin: 0;
   }
   .image-container {
     width: 50%;
-  
+  } 
+  .article-two h2  {
+    text-align: left;
+    max-width: initial;
   }
-  
+  .section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: left;
+    gap: 25px;
+  }
+  .article-two p {
+    max-width: initial;
+    text-align: left;
+  }
+  .article-two span {
+    display: block;
+  }
 }
-
 /* attribution */
 .attribution {
   font-size: 11px;
